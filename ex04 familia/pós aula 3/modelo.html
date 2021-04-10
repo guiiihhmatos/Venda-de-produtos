@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja virtual</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Finalizando a compra do produto</h1>
+
+    </header>
+
+
+
+
+    <section>
+        <div id="dados">
+            <p><strong>Valor do produto : R$</strong>
+                <input type="number" name="venda" id="venda">
+            </p>
+            <p id="pagamento"><strong>Forma de pagamento : </strong></p>
+
+
+
+            <p><input type="radio" name="valor" id="vista" checked>
+                <label for="vista">À Vista</label>
+            </p>
+            <p><input type="radio" name="valor" id="prazo30">
+                <label for="prazo30">Prazo 30 dias</label>
+            </p>
+            <p><input type="radio" name="valor" id="prazo60">
+                <label for="prazo60">Prazo 60 dias</label>
+            </p>
+            <p><input type="radio" name="valor" id="prazo90">
+                <label for="prazo90">Prazo 90 dias</label>
+            </p>
+            <p>
+                <input type="radio" name="valor" id="debito">
+                <label for="debito">Cartão de débito</label>
+            </p>
+            <p>
+                <input type="radio" name="valor" id="credito">
+                <label for="credito">Cartão de crédito</label>
+            </p>
+
+<input type="button" value="calcular" onclick="calcular()">
+
+        </div>
+
+
+
+        <div id="res">
+<p id="resultado"><strong>Calculando o desconto...</strong></p>
+
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <p>&copy; guihMatos</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
